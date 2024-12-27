@@ -47,11 +47,11 @@ class Solution {
   // room하나의 거리두기가 됐는지 확인
   private boolean isDistanced(char[][] room) {
     for (int y = 0; y < room.length; y++) {
-      for (int x = 0; x < room.length; x++) {
+      for (int x = 0; x < room[y].length; x++) {
         if (room[y][x] != 'P')
           continue;
 
-        if (isDistanced(room, x, y))
+        if (!isDistanced(room, x, y))
           return false;
       }
     }
