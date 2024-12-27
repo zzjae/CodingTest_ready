@@ -51,6 +51,7 @@ class Solution {
         if (room[y][x] != 'P')
           continue;
 
+        // 에러 고침
         if (!isDistanced(room, x, y))
           return false;
       }
