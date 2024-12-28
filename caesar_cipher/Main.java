@@ -16,7 +16,7 @@ class Solution {
 
     // 기준+위치
     return (char) (offset + position);
-  }assa
+  }
 
   public String solution(String s, int n) {
     StringBuilder builder = new StringBuilder();
