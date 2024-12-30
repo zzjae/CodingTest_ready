@@ -1,4 +1,4 @@
-class Solution {
+public class binary_repeat {
   private int countZeros(String s) {
     int zeros = 0;
     for (char c : s.toCharArray()) {

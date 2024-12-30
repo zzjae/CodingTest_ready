@@ -1,4 +1,4 @@
-class Solution {
+public class caesar_cipher {
 
   private char push(char c, int n) {
     // 알파벳이 아니라면(공백)

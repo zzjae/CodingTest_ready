@@ -1,4 +1,4 @@
-class Solution {
+public class flip_natural_number {
   public int[] solution(long n) {
 
     // 입력받은 long을 string으로 변환

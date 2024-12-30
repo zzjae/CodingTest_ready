@@ -1,4 +1,4 @@
-class Solution {
+public class social_distancing {
   // 멘헤튼 거리를 살쳐봐야할 위치
   private static final int dx[] = { 0, -1, 1, 0 }; // 상,좌,우,하
   private static final int dy[] = { -1, 0, 0, 1 }; // 상,좌,우,하

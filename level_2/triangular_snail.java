@@ -1,4 +1,4 @@
-class Solution {
+public class triangular_snail {
   public int[] solution(int n) {
 
     // 입력으로 n을 받음 삼각형을 표현할 배열

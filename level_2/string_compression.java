@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-class Solution {
+public class string_compression {
   // 압축 후 압축된 문자열의 길이를 반환하는 함수
   private int compress(String source, int length) { // length는 몇개 단위로 자를 것인가임
     StringBuilder builder = new StringBuilder();

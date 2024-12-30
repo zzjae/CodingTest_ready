@@ -1,4 +1,4 @@
-class Solution {
+public class strange_string {
   public String solution(String s) {
 
     StringBuilder builder = new StringBuilder();

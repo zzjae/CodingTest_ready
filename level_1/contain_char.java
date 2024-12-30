@@ -1,4 +1,4 @@
-class Solution {
+public class contain_char {
   boolean solution(String s) {
     s = s.toLowerCase(); // 모두 소문자로 변환
     int ps = s.length() - s.replace("p", "").length();
