@@ -1,6 +1,7 @@
 ﻿# CodingTest 준비
 
 # Java 문자열 함수
+
 <br />
 String.charAt(int index): string내 char을 추출 <br />
 String.toCharArray(): string을 char로 전부 변환<br />
@@ -33,3 +34,24 @@ String.indexOf(String str) -> {int}: 전달받은 문자열이 원본 문자열�
 <br />
 String.replace(char oldChar, char newChar) -> {string}: oldChar을 newChar로 변환후 반환<br />
 String.replace(CharSequence target, CharSequence replacement) -> {string}: 원본 문자열에 있는 target문자열을 replacement로 변환후 반환<br />
+<br />
+# 정규표현식
+<br />
+. :해당 문자를 제외한 아무 문자 ex) .nd -> and, end, cnd, nnd<br />
+[abc]: a,b,c중 아무거나 ex) [ae]nd -> and, end<br />
+[^abc]: a,b,c를 제외하고 ex) [^ae]nd -> cnd,nnd...<br />
+[a-g]: a,g사이 문자 [0-9] -> 모든 숫자 [a-z] -> 모든 소문자 [A-Z] -> 모든 대문자 ex) [1-9][0-9] -> 10,25,35...<br />
+a*: a 0개 이상 ex) 1[0-9]* -> 1,10,164,1810...<br />
+a+: a 1개 이상 ex) 1[0-9]+ -> 10,164,1810...<br />
+a?: a 0개 또는 1개 ex) 1[0-9]? -> 1,10,11...<br />
+a{5}: a 5개 ex) [a-c]{3} -> aaa,aba...<br />
+a{2,}: a 2개 이상 ex) [a-c]{3,} -> a,aa,ab...<br />
+a{2,4}: a 2개 이상 4개 이하 ex) [a-c]{2,3} -> aa,bb,ac...<br />
+ab|cd: ab또는 cd ex) 일|하나|한 -> 일,하나,한...<br />
+^a: 문자열 처음이 a <br />
+a$: 문자열 마지막이 a <br />
+\: 사전 정의된 문자를 표현하는 이스케이프 시퀀스 ex) \. -> ., \+ -> +<br />
+<br />
+replaceAll(String regex, String replacement) -> {string}: 전달받은 정규식 표현에 매칭되는 모든 패턴을 모두 replacement로<br />
+matches(String regex) -> {boolean}: 정규식 표현에 매칭되는지 검사<br />
+split(String regex) -> {String[]}: 전달받은 정규식 표현에 매칭되는 모든 패턴을 기준으로 원본 문자영을 잘라서 반환<br />
